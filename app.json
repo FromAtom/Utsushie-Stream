@@ -27,15 +27,19 @@
             "description": "puma workers count",
             "value": "1",
             "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/ruby"
+        }
+    ],
+    "addons": [
+        {
+            "plan": "redistogo:nano"
         },
-        "image": "heroku/ruby",
-        "addons": [
-            {
-                "plan": "redistogo:nano"
-            },
-            {
-                "plan": "papertrail:choklad"
-            }
-        ]
-    }
+        {
+            "plan": "papertrail:choklad"
+        }
+    ]
 }
