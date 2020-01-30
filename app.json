@@ -27,7 +27,7 @@
             "description": "puma workers count",
             "value": "1",
             "required": false
-        }
+        },
         "image": "heroku/ruby",
         "addons": [
             {
