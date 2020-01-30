@@ -1,0 +1,41 @@
+{
+    "name": "Utsushie-Stream",
+    "description": "Sync Slack Custom Emoji to esa.io",
+    "keywords": ["emoji", "esa", "slack"],
+    "repository": "https://github.com/FromAtom/Utsushie-Stream",
+    "success_url": "/",
+    "env": {
+        "SLACK_WEBHOOK_URL": {
+            "description": "e.g. https://hooks.slack.com/services/XXX/YYY/ZZZ"
+        },
+        "ESA_ACCESS_TOKEN": {
+            "description": "Personal Access Token (Require read and write permission)"
+        },
+        "ESA_TEAM_NAME": {
+            "description": "esa.io team name"
+        },
+        "IGNORE_EMOJI_LIST": {
+            "description": "Ignore emoji list. Comma-separated values. e.g. 'emoji1, emoji2, emoji3'",
+            "required": false
+        },
+        "MAX_THREADS": {
+            "description": "puma threads count",
+            "value": "1",
+            "required": false
+        },
+        "WEB_CONCURRENCY": {
+            "description": "puma workers count",
+            "value": "1",
+            "required": false
+        }
+        "image": "heroku/ruby",
+        "addons": [
+            {
+                "plan": "redistogo:nano"
+            },
+            {
+                "plan": "papertrail:choklad"
+            }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "token": "IrUecdn0UZQjjDVhWZtmzDD4",
+  "team_id": "T978J17LL",
+  "api_app_id": "AL9HBRVU2",
+  "event": {
+    "type": "emoji_changed",
+    "subtype": "remove",
+    "names": [
+      "picard_facepalm"
+    ],
+    "event_ts": "1361482916.000004"
+  },
+  "type": "event_callback",
+  "event_id": "EvLNRFSB39",
+  "event_time": 1563683052,
+  "authed_users": [
+    "UCYTZ8NQK"
+  ]
+}

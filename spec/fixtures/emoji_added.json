@@ -1,0 +1,18 @@
+{
+    "token": "IrUecdn0UZQjjDVhWZtmzDD4",
+    "team_id": "T978J17LL",
+    "api_app_id": "AL9HBRVU2",
+    "event": {
+      "type": "emoji_changed",
+      "subtype": "add",
+      "name": "picard_facepalm",
+      "value": "https://my.slack.com/emoji/picard_facepalm/db8e287430eaa459.gif",
+      "event_ts": "1361482916.000004"
+    },
+    "type": "event_callback",
+    "event_id": "EvL9J47KD1",
+    "event_time": 1563682882,
+    "authed_users": [
+      "UCYTZ8NQK"
+    ]
+  }
