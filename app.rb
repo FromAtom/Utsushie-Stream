@@ -13,7 +13,7 @@ SLACK_WEBHOOK_URL = ENV["SLACK_WEBHOOK_URL"]
 ESA_ACCESS_TOKEN = ENV['ESA_ACCESS_TOKEN']
 ESA_TEAM_NAME = ENV['ESA_TEAM_NAME']
 IMAGE_BUFFER_DIR = "images"
-IGNORE_EMOJI_LIST = ENV['INGNORE_EMOJI_LIST'] || '' # e.g. "ignore_emoji1, ignore_emoji2, ignore_emoji3"
+IGNORE_EMOJI_LIST = ENV['IGNORE_EMOJI_LIST'] || '' # e.g. "ignore_emoji1, ignore_emoji2, ignore_emoji3"
 
 if ESA_ACCESS_TOKEN.nil? || ESA_TEAM_NAME.nil? || SLACK_WEBHOOK_URL.nil?
   puts "[ERROR]: Require ENV['ESA_ACCESS_TOKEN']." if ESA_ACCESS_TOKEN.nil?
