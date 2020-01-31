@@ -62,6 +62,9 @@ class App < Sinatra::Base
         when 'remove'
           names = event['names']
           names.each do |name|
+            ignore_emojis = IGNORE_EMOJI_LIST.split(',').map(&:strip) || []
+            next if ignore_emojis.include?(name)
+
             App.remove_emoji(name)
           end
         end
