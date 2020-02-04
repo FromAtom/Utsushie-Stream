@@ -29,8 +29,8 @@ Read/Write権限が必要なので注意
 これまでの作業で下記が揃っているはずなので設定する
 
 - ESA_ACCESS_TOKEN
-  - 7. の作業で取得したもの
+  - 7．の作業で取得したもの
 - ESA_TEAM_NAME
   - https://TEAM_NAME.esa.io/
 - SLACK_WEBHOOK_URL
-  - 4. の作業で取得したもの
+  - 4．の作業で取得したもの
