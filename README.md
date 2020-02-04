@@ -6,6 +6,9 @@ Utsushie-Stream is a tool that hooks [emoji_changed event](https://api.slack.com
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FromAtom/Utsushie-Stream)
 
+## Usage
+[こちら](usage.md)を参照してください。
+
 ## LICENSE
 [MIT](LICENSE)
 
