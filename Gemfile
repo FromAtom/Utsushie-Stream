@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+ruby "~> 3.1.2"
+
 gem "puma", require: false
 gem "puma-heroku", require: false
 gem "esa"
