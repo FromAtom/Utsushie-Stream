@@ -83,7 +83,7 @@ class App < Sinatra::Base
       # SlackからDLした絵文字画像を保存するフォルダを準備
       Dir.mkdir(IMAGE_BUFFER_DIR) if not Dir.exist?(IMAGE_BUFFER_DIR)
 
-      open(emoji.url) do |file|
+      URI.open(emoji.url) do |file|
         open(path, "w+b") do |out|
           out.write(file.read)
         end
