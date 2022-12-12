@@ -7,7 +7,6 @@ module Cache
   REDIS_TTL = 60 * 60 # 1時間
   FIRE_STORE_TTL = 60 * 60 # 1時間
   KEY_PREFIX = 'utsushie-'
-  FIRESTORE_COLLECTION_ID = ENV['FIRESTORE_COLLECTION']
 
   def self.set(key)
     set_redis(key) if redis_enable?
@@ -72,7 +71,7 @@ module Cache
   end
 
   def self.firestore_key(key)
-    Cache::FIRESTORE_COLLECTION_ID + "/" + key
+    ENV['FIRESTORE_COLLECTION'] + "/" + key
   end
 
 end
