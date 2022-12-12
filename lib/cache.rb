@@ -71,7 +71,7 @@ module Cache
   end
 
   def self.firestore_key(key)
-    ENV['FIRESTORE_COLLECTION'] + "/" + key
+    ENV['FIRESTORE_COLLECTION'] + "/" + Cache::KEY_PREFIX + key
   end
 
 end
